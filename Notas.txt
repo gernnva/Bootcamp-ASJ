@@ -1,0 +1,25 @@
+https://developer.mozilla.org/en-US/docs/Web/JavaScript
+
+caninclude.glitch.me
+
+--------------------------------
+Martes 28/11
+
+El diseño responsivo se refiere a la capacidad de un sitio web para responder y adaptarse a diferentes tamaños de pantalla y dispositivos.
+La adaptabilidad se centra en la creación de versiones específicas del sitio web para diferentes dispositivos o grupos de dispositivos.
+Añadir accesibilidad a un sitio web implica hacerlo comprensible, navegable y operable para una amplia audiencia.
+
+--para aprender a usar grid--
+https://cssgridgarden.com/#es
+
+--documentacion de Bootstrap--
+https://esdocu.net/bootstrap/5.3/getting-started/introduction
+
+--documentacion oficial--
+https://getbootstrap.com/docs/5.3/getting-started/introduction/
+
+
+
+
+
+

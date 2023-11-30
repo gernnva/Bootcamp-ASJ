@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Producto</title>
+</head>
+
+<body>
+
+    <nav class="contenedorNav">
+        <h1 class="logo">
+            BOUTIQUE
+        </h1>
+        <div class="links">
+            <a href="index.html">HOME</a>
+            <a href="">SHOP</a>
+            <select name="demos" id="demos" class="demos">
+                <option value="" selected>DEMOS</option>
+            </select>
+            <select name="demos" id="demos" class="demos">
+                <option value="" selected>BLOCKS</option>
+            </select>
+            <a href="">COMPONENTS</a>
+            <a href="">CONTACT US</a>
+            <a href="carrito.html">MY CART</a>
+        </div>
+
+    </nav>
+    <!--SEGUNDO NAVBAR-->
+    <section class="segundoNav">
+        <div>
+            <label for="">PRODUCTS →</label>
+            <label for="">Sunset sunglasses</label>
+        </div>
+
+        <form class="inputSearch">
+            <input class="buscarInput" type="text" placeholder="Search...">
+            <button class="botonSearch">$</button>
+        </form>
+
+
+
+        <select name="pricelist" id="pricelist" class="pricelist">
+            <option value="" selected>PRICELIST</option>
+            <option value=""></option>
+            <option value=""></option>
+        </select>
+    </section>
+    <section class="fotoYDescripcion">
+        <div>
+            <img class="ImagenProducto"
+                src="https://media.allure.com/photos/5adba084276cd40c0eb8f42e/16:9/w_2560%2Cc_limit/GettyImages-826492462.jpg"
+                alt="">
+        </div>
+        <aside class="descripcionProducto">
+            <h2 >Sunset sunglasses</h2>
+            <h4 class="price">$ 79.00</h4>
+            <!--aca lo hice inline pq muchas clases para basicamente lo mismo no le encontraba sentido sin programar-->
+            <div class="coloresDispo">
+                <div style="width: 30px; height: 30px; margin: 0 5px 5px 0; background-color: white; border-style: solid"></div> <!-- colores cuadraditos-->
+                <div style="width: 30px; height: 30px; margin: 0 5px 5px 0; background-color: red; border-style: solid"></div>
+                <div style="width: 30px; height: 30px; margin: 0 5px 5px 0; background-color: black; border-style: solid"></div>
+                <div style="width: 30px; height: 30px; margin: 0 5px 5px 0; background-color: green; border-style: solid"></div>
+                <div style="width: 30px; height: 30px; margin: 0 5px 5px 0; background-color: yellow; border-style: solid"></div>
+            </div>
+            <div class="sumarYrestarProductos">
+                <button class="botonesMasYMenos"> - </button>
+                <input type="number" style="width: 40px; height: 25px;" placeholder="1" >
+                <button class="botonesMasYMenos"> + </button>
+            </div>
+            <div>
+                <form action="carrito.html">
+                    <button class="botones botonAddCart">ADD TO CART</button>
+                </form>
+                
+            </div>
+            <div class="InfoProducto"> <!-- estos div tienen linea solo arriba-->
+                <p class="textoInformativo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis enim consequuntur ab accusantium
+                    fugit eaque.</p>
+            </div>
+            <div class="InfoProducto"> <!-- estos div tienen linea solo arriba-->
+                <p class="textoInformativo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis enim consequuntur ab accusantium
+                    fugit eaque.</p>
+            </div>
+
+
+
+        </aside>
+    </section>
+
+</body>
+
+</html>

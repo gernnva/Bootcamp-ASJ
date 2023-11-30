@@ -1,0 +1,225 @@
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 50px;
+}
+/* NAVBAR */
+.contenedorNav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: italic;
+}
+
+.demos{
+    border: none;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin: 0 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+
+.links a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin: 0 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.links a:hover {
+    color: rgb(0, 255, 251);
+    transition: color 2s;
+
+}
+
+
+/*SEGUNDO NAV*/
+
+.segundoNav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+
+.inputSearch{
+    display: flex;
+    
+
+}
+
+.buscarInput{
+    height: 30px;
+    width: 300px;
+}
+
+.botonSearch{
+    background-color: black;
+    width: 40px;
+    color: beige;
+
+}
+
+.pricelist{
+    background-color: black;
+    height: 40px;
+    color: beige;
+    margin-left: 30px;
+
+}
+
+.padrePasarPaginas{
+    display: flex;
+}
+
+.pasarPaginas {
+    height: 30px;
+    width: 30px;
+    border: 1px solid gray    ;
+}
+
+.extremos{
+    width: 50px;
+}
+/*CONTAINER PRODUCTOS*/
+
+
+
+.containerProductos{
+    
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto;
+    margin: 0px;
+    /*El grid Template no esta funcionando como quiero*/
+    
+    padding: 5px;
+
+}
+
+.producto{
+    place-items: center;
+    border-style: solid;
+    border-color: gray;
+    border-width: 1px;
+    margin: 5px;
+    padding: 20px;
+
+}
+
+.botones{
+    width: 300px;
+    height: 60px;
+    margin: 10px 0 10px 0;
+    border: none;
+    font-size: 15px;
+}
+
+.botonComprar{
+    background-color: black;
+    color: white;
+
+} 
+
+.botonComprar:hover {
+    background-color: gray;
+    cursor: pointer;
+}
+
+h3{
+    margin-top: 0;
+    font-size: 30px;
+    color: rgb(56, 204, 204);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+h4{
+    font-size: small;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.imgProductoGrid {
+    align-items: center;
+    height: 200px;
+    width: 300px;
+}
+
+
+/* HTML DE PRODUCTO */
+h2{
+    font-size: 35px;
+
+}
+
+
+
+.fotoYDescripcion{
+    display: flex;
+    margin: 0;
+}
+
+.ImagenProducto{
+
+    width: 90%;
+}
+
+.descripcionProducto{
+
+}
+
+.sumarYrestarProductos{
+    display: flex;
+    margin: 30px 0 5px 0;
+
+}
+.price{
+    font-size: 30px;
+}
+.coloresDispo{
+    display: flex;
+}
+
+.botonesMasYMenos{
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    background-color: aqua;
+    border: 2px solid;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 5px
+
+
+
+}
+
+.botonAddCart{
+    background-color: aqua;
+    color: white;
+} 
+
+.botonAddCart:hover {
+    background-color: aquamarine;
+    cursor: pointer;
+}
+
+.InfoProducto{
+    border-top: 3px solid whitesmoke;
+
+}
+
+.textoInformativo{
+    color: rgb(156, 160, 160);
+}

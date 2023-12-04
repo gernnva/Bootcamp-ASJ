@@ -11,6 +11,7 @@ let pedido;
 let opcionSeleccionada
 let siOINo
 let totalPedido;
+let propina;
 
 
 
@@ -31,7 +32,7 @@ do {
         break;
     case 2:
         pedido = pedido + "flan $200\n";
-        totalPedido = totalPedido + 200;
+        totalPedido += 200;
         break;
     case 3:
         pedido = pedido + "sopa $300 \n";
@@ -53,14 +54,19 @@ alert("espero que haya disfrutado la comida")
 siOINo = (prompt("antes de traerle la cuenta quiere escuchar un chiste?")).toLowerCase
 
 if(siOINo == "si"){
-    
+    alert("Chiste no gracioso")
 
 } else {
-    
+    alert("mejor pq no sabia ninguno")
+
 }
 
+siOINo = (prompt("La propina es opcional y es del 10% la vas a Pagar")).toLowerCase;
 
+if(siOINo == "si"){
+    alert(`la cuenta CON la propina es $${totalPedido*1.10}`)
 
+} else {
+    alert(`la cuenta SIN la propina es $${totalPedido}`)
 
-
-
+}

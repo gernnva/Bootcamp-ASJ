@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+
+    <div class="container text-center m-5">
+        <div class="row">
+            <div id="screen" class="col botones screen">
+              0
+            </div>
+        </div>
+        <div class="row">
+          <div class="col botones top">
+            C
+          </div>
+          <div class="col botones top">
+            +/-
+          </div>
+          <div class="col botones top">
+            %
+          </div>
+          <div class="col botones der">
+            /
+          </div>
+          
+        </div>
+        <div class="row">
+            <div onclick="agregarNumero('7')" class="col botones">
+              7
+            </div>
+            <div id="btn8" class="col botones">
+              8
+            </div>
+            <div id="btn9" class="col botones">
+              9
+            </div>
+            <div class="col botones der">
+              x
+            </div>
+            
+          </div>
+          <div class="row">
+            <div id="btn4" class="col botones">
+              4
+            </div>
+            <div id="btn5" class="col botones">
+              5
+            </div>
+            <div id="btn6" class="col botones">
+              6
+            </div>
+            <div class="col botones der">
+              -
+            </div>
+            
+          </div>
+          <div class="row">
+            <div id="btn1" class="col botones">
+              1
+            </div>
+            <div id="btn2" class="col botones">
+              2
+            </div>
+            <div id="btn3" class="col botones">
+              3
+            </div>
+            <div class="col botones der">
+              +
+            </div>
+            
+          </div>
+          <div class="row">
+            
+            <div id="btn0" class="col botones ">
+              0
+            </div>
+            <div class="col botones ">
+              ,
+            </div>
+            <div class="col botones der">
+              =
+            </div>
+            
+          </div>
+      </div>
+      <script type="text/javascript" src="calc.js"></script>
+</body>
+</html>

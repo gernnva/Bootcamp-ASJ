@@ -71,12 +71,33 @@ productosEnLocalStorage.forEach(function (producto) {
   imagen.style.width = "80px";
   imagen.style.height = "80px";
 
+  // Crear el botón de eliminación
+  var botonEliminar = document.createElement("button");
+  botonEliminar.textContent = "Eliminar";
+  botonEliminar.classList.add("botonEliminar", "btn-danger", "btn"); // agregar clases de bootstrap
+
+  // click y borra el articulo completo
+  botonEliminar.addEventListener("click", function () {
+    // Eliminar el producto del localStorage
+    var index = productosEnLocalStorage.indexOf(producto);
+    if (index !== -1) {
+      productosEnLocalStorage.splice(index, 1);
+      // Actualizar el array en localStorage
+      localStorage.setItem("productos", JSON.stringify(productosEnLocalStorage));
+      // Actualizar la interfaz
+      
+      infoContainer.removeChild(cadaProductoContainer);
+      alert("producto eliminado")
+      window.location.href = "carrito.html";
+    }
+  });
+
   // Añadir los elementos al contenedor
   cadaProductoContainer.appendChild(imagen);
   cadaProductoContainer.appendChild(nombreP);
   cadaProductoContainer.appendChild(cantidadP);
   cadaProductoContainer.appendChild(precioP);
-  
+  cadaProductoContainer.appendChild(botonEliminar);
 
   // Añadir el contenedor del producto al contenedor principal
   infoContainer.appendChild(cadaProductoContainer);

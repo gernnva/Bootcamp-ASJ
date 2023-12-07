@@ -111,11 +111,8 @@ document.addEventListener('DOMContentLoaded', function () {
     // Agregar un controlador de eventos a cada enlace
     enlacesDetalle.forEach(function (enlace) {
       enlace.addEventListener('click', function () {
-        // Obtener la URL de redirección desde el atributo data-href
-        var url = this.getAttribute('data-href');
-
         // Redireccionar a la URL
-        window.location.href = url;
+        window.location.href = 'producto.html';
       });
     });
   });

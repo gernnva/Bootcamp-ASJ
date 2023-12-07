@@ -1,24 +1,24 @@
 // Obtener todos los botones "Comprar"
-var botonesComprar = document.querySelectorAll(".botones.botonComprar");
+let botonesComprar = document.querySelectorAll(".botones.botonComprar");
 
 // Agregar un controlador de eventos a cada botón
 botonesComprar.forEach(function (boton, index) {
   boton.addEventListener("click", function () {
     // Obtener información del producto
-    var producto = this.closest(".producto");
-    var imgElement = producto.querySelector(".imgProductoGrid");
-    var tituloElement = producto.querySelector("h3");
-    var precioElement = producto.querySelector("h4");
+    let producto = this.closest(".producto");
+    let imgElement = producto.querySelector(".imgProductoGrid");
+    let tituloElement = producto.querySelector("h3");
+    let precioElement = producto.querySelector("h4");
 
-    var imagenSrc = imgElement.src;
-    var tituloTexto = tituloElement.textContent;
-    var precioTexto = precioElement.textContent;
+    let imagenSrc = imgElement.src;
+    let tituloTexto = tituloElement.textContent;
+    let precioTexto = precioElement.textContent;
 
     // Obtener la información existente en localStorage
-    var productosEnLocalStorage =
+    let productosEnLocalStorage =
       JSON.parse(localStorage.getItem("productos")) || [];
 
-      var productoExistente = productosEnLocalStorage.find(function (prod) {
+      let productoExistente = productosEnLocalStorage.find(function (prod) {
         return prod.nombre === tituloTexto;
       });
   
@@ -27,7 +27,7 @@ botonesComprar.forEach(function (boton, index) {
         productoExistente.cantidad += 1;
       } else {
         // Si el producto no está en el carrito, agregar uno nuevo
-        var nuevoProducto = {
+        let nuevoProducto = {
           imagen: imagenSrc,
           nombre: tituloTexto,
           precio: precioTexto,
@@ -45,23 +45,23 @@ botonesComprar.forEach(function (boton, index) {
 });
 
 // Obtener información desde localStorage
-var productosEnLocalStorage = JSON.parse(localStorage.getItem("productos")) || [];
+let productosEnLocalStorage = JSON.parse(localStorage.getItem("productos")) || [];
 
 // Mostrar información en los elementos HTML
-var infoContainer = document.getElementById("infoContainer");
+let infoContainer = document.getElementById("infoContainer");
 
 productosEnLocalStorage.forEach(function (producto) {
 
   // Crear un contenedor div para el producto  
-  var cadaProductoContainer = document.createElement("div")
+  let cadaProductoContainer = document.createElement("div")
   cadaProductoContainer.classList.add("d-flex", "flex-row", "mb-3", "align-items-center","justify-content-around")
 
 
   // Crear elementos <p> para mostrar la información del producto
-  var nombreP = document.createElement("p");
-  var cantidadP = document.createElement("p");
-  var precioP = document.createElement("p");
-  var imagen = document.createElement("img");
+  let nombreP = document.createElement("p");
+  let cantidadP = document.createElement("p");
+  let precioP = document.createElement("p");
+  let imagen = document.createElement("img");
 
   // Asignar la información a los elementos <p>
   nombreP.textContent = "Producto: " + producto.nombre;
@@ -83,7 +83,7 @@ productosEnLocalStorage.forEach(function (producto) {
   
 });
 
-var botonBorrar = document.getElementById("borrarPedidoTotal");
+let botonBorrar = document.getElementById("borrarPedidoTotal");
 
 // Agregar un controlador de eventos al botón
 botonBorrar.addEventListener("click", function () {
@@ -93,12 +93,12 @@ botonBorrar.addEventListener("click", function () {
 });
 
 // Calcular el subtotal sumando los precios de todos los productos
-var subtotal = productosEnLocalStorage.reduce(function (total, producto) {
-    var precioNumerico = parseFloat(producto.cantidad * producto.precio);
+let subtotal = productosEnLocalStorage.reduce(function (total, producto) {
+    let precioNumerico = parseFloat(producto.cantidad * producto.precio);
     return total + precioNumerico;
 }, 0);
 
-var subtotalElement = document.getElementById("subtotal");
+let subtotalElement = document.getElementById("subtotal");
 subtotalElement.textContent = "$" + subtotal;
 
 
@@ -106,7 +106,7 @@ subtotalElement.textContent = "$" + subtotal;
 
 document.addEventListener('DOMContentLoaded', function () {
     // Obtener todos los elementos con la clase "producto-link-detalle"
-    var enlacesDetalle = document.querySelectorAll('.producto-link-detalle');
+    let enlacesDetalle = document.querySelectorAll('.producto-link-detalle');
 
     // Agregar un controlador de eventos a cada enlace
     enlacesDetalle.forEach(function (enlace) {

@@ -8,6 +8,7 @@ input.addEventListener("keydown", (evento) => {
         cadena = cadena + "_";
     } else if (letra === "Backspace") {
         cadena = cadena.slice(0, -1);
+        
     } else {
         cadena = cadena + letra
     }

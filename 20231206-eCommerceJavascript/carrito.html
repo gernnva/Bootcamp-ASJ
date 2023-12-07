@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Carrito</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <head>
+        <nav class="contenedorNav">
+            <h1 class="logo">
+                BOUTIQUE
+            </h1>
+            <div class="links">
+                <a href="index.html">HOME</a>
+                <a href="">SHOP</a>
+                <select name="demos" id="dmos" class="demos">
+                    <option value="" selected>DEMOS</option>
+                </select>
+                <select name="deos" id="demos" class="demos">
+                    <option value="" selected>BLOCKS</option>
+                </select>
+                <a href="">COMPONENTS</a>
+                <a href="">CONTACT US</a>
+                <a href="carrito.html">MY CART</a>
+            </div>
+        </nav>
+        <div class="container d-flex justify-content-between my-5">
+            <h2>
+                carrito
+            </h2>
+            <button id="borrarPedidoTotal" type="button" class="btn btn-danger">
+                Borrar Todos los articulos
+            </button>
+        </div>
+
+    </head>
+    <section class="container d-flex">
+        <div class="container d-flex flex-column" id="infoContainer">
+        </div>
+        <div class="align-items-center flex-column">
+            <h2>subtotal</h2>
+            <h3 id="subtotal"></h3>
+            <button class="btn btn-success my-5 btn-lg">Finalizar compra</button>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="script.js"></script> 
+</body>
+</html>

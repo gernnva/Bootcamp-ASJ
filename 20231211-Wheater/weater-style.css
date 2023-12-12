@@ -1,0 +1,21 @@
+body {
+    font-family: "Roboto", sans-serif;
+    background: #0a1f44;
+    color: white;
+}
+
+body {
+    display: block;
+    margin: 8px;
+}
+
+.container{
+    background-color: white;
+    color: #1e2432;
+    width: 300px;
+    height: 350px;
+    border-radius: 20px;
+    margin-left: 50px;
+    visibility: hidden;
+    margin: 50px auto;
+}

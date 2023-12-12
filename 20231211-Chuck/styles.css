@@ -1,0 +1,11 @@
+h2 {
+    text-align: center;
+    padding: 10px;
+    border: 2px black dashed;
+}
+
+.container {
+    display: grid;
+    place-items: center;
+
+}

@@ -2,17 +2,19 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { MiComponenteComponent } from './components/mi-componente/mi-componente.component';
-import { ListaComponent } from './components/lista/lista.component';
+import { NavComponent } from './components/nav/nav.component';
+import { BodyComponent } from './components/body/body.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MiComponenteComponent,
-    ListaComponent
+    NavComponent,
+    BodyComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

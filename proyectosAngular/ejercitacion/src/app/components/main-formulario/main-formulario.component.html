@@ -1,0 +1,61 @@
+<div class=" container-fluid">
+    <div class="row">
+        <aside class="col-md-2 order-md-1 border-end fillScreen">
+            <!-- Contenido Aside -->
+            <h2>Proyectos</h2>
+            <p>Formulario</p>
+        </aside>
+
+        <main class="col-md-10 order-md-2 fillScreen">
+            <h1>Formulario</h1> 
+            <div class="d-flex mt-3">
+                <div class="col-md-4 border p-1 m-1">
+                    <h4 class="mb-3">Datos a Completar</h4>
+                    <div class="mb-3 text-center">
+                        <label for="">Imagen</label>
+                        <input [(ngModel)]="urlImg" type="text" class="form-control">
+                    </div>
+                    <div class="mb-3 text-center">
+                        <label for="">Nombre Personaje</label>
+                        <input [(ngModel)]="nameCharecter" type="text" class="form-control">
+                    </div>
+                    <div class="mb-3 text-center">
+                        <label class="" for="">Profesion</label>
+                        <input [(ngModel)]="profesion" type="text" class="form-control">
+                    </div>
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-primary mb-2 btn-block" (click)="agregarPersonaje()">Guardar</button>
+                    </div>
+                </div>
+                <div class="col-md-8 border p-1 m-1">
+                    <h4>Personajes Cargados</h4>
+                    <div>
+                        <table class="table">
+                            <thead >
+                                <tr class="d-flex">
+                                    <th class="col-md-2">Imagen</th>
+                                    <th class="col-md-6">Personaje</th>
+                                    <th class="col-md-4">Profesion</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let personaje of personajes" class="d-flex">
+                                    <td class="col-md-2">
+                                        <img [src]="personaje.urlImg" alt="Imagen de {{ personaje.nameCharacter }}" class="img-fluid" />
+                                    </td>
+                                    <td class="col-md-6">{{ personaje.nameCharacter }}</td>
+                                    <td class="col-md-4">{{ personaje.profesion }}</td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            
+
+        </main>
+
+
+    </div>
+</div>

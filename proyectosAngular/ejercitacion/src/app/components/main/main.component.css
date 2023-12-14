@@ -1,0 +1,14 @@
+.fillScreen{
+    margin: 0; /* Elimina los márgenes predeterminados del body */
+    min-height: 80vh; /* Establece la altura mínima del body al 100% de la altura de la ventana */
+    display: flex;
+    flex-direction: column;
+}
+
+.input{
+    width: 600px;
+}
+
+.tareas{
+    list-style: none;
+}

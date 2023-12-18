@@ -1,0 +1,9 @@
+<p>personajes works!</p>
+<table>
+  <tr *ngFor="let d of datos.results">
+    <td>{{ d.id }}</td>
+    <td><img src="{{ d.image }}" alt="" width="50px" /></td>
+    <td>{{ d.name }}</td>
+    <td>{{ d.species }}</td>
+  </tr>
+</table>

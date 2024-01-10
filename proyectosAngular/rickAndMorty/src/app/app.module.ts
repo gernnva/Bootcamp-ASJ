@@ -6,12 +6,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PersonajesComponent } from './components/personajes/personajes.component';
 import { DetallePersonajeComponent } from './components/detalle-personaje/detalle-personaje.component';
+import { MiPipePipe } from './pipe/mi-pipe.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     PersonajesComponent,
-    DetallePersonajeComponent
+    DetallePersonajeComponent,
+    MiPipePipe
   ],
   imports: [
     BrowserModule,

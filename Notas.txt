@@ -18,8 +18,106 @@ https://esdocu.net/bootstrap/5.3/getting-started/introduction
 --documentacion oficial--
 https://getbootstrap.com/docs/5.3/getting-started/introduction/
 
+la clase col-auto se utiliza para hacer que una columna tome el ancho mínimo necesario para acomodar su contenido sin forzarlo a ocupar un ancho específico
+
+https://th.bing.com/th/id/R.5f2d9fd6f8baab7c1e86db808f59a47c?rik=k12ydmyKqmXkTQ&riu=http%3a%2f%2f3.bp.blogspot.com%2f-p3VY-8JO-28%2fUhcdyUsPD_I%2fAAAAAAAAAIE%2fSr6X0mKJm8g%2fs1600%2fdescarga%2b(1).jpg&ehk=Op783f4wzV6iwwVDcmZHepKncvW69sgMkxkhdyz%2fySM%3d&risl=&pid=ImgRaw&r=0
+
+
+Los operadores con mayor precedencia se evalúan primero. Si dos operadores tienen la misma precedencia, su orden de evaluación depende de su asociatividad. Los operadores de agrupación () tienen la precedencia más alta y se evalúan primero. Luego, los operadores de negación ! se evalúan. Finalmente, los operadores AND && y OR || se evalúan en ese orden.
+eso segun GPT
+
+es famosa la funcion de fibinacci en recursividad: 
+const fibonacci = (n) => (n <= 1 ? n : fibonacci(n - 1) + fibonacci(n - 2));
 
 
 
+Coding Bootcamp | Plataforma 517:32
+Se me  ocurre que pueden hacer algo como esto:
+
+HTML
+
+<button id="1" onClick="mi_funcion(this.id)">1</button>
+
+<button id="2" onClick="mi_funcion(this.id)">2 </button>
+
+JS
+
+ function mi_funcion(elemento) {
+            console.log("ID de Boton = " + elemento);
+  }
+
+
+.addEventListener(, () => {
+    numEnPantalla = numEnPantalla + num0;
+    console.log(numEnPantalla);
+})
+
+
+para refrescar o recargar la página, tmb pueden utilizar location.reload();
+
+
+https://openweathermap.org/weather-conditions
+
+
+https://www.youtube.com/watch?v=soInCF7nbDw
+
+Agregar opciones para mostrar:
+- Todas las tareas
+- Tareas Completas
+- Tareas Incompletas
+- Tareas eliminadas
+
+
+"scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]
+
+
+
+manipular la imagen
+.imgContenedor{
+height o width: #px/vh/vw;
+aspect-ratio: 2/1;
+overflow: hidden;
+border-radius: 5px;
+}
+img{
+object-fit:cover
+}
+
+
+manipular imagenes 
+https://getbootstrap.com/docs/5.3/content/images/#responsive-images
+
+
+https://angular.io/guide/router
+
+    id: 1,
+    proveedor: 'Juan',
+    categoria: 'limpieza',
+    nombreProducto: 'trapo',
+    descripcion: 'para limpiar el piso',
+    precio: 15,
+
+
+
+
+
+https://www.tektutorialshub.com/angular/routerlinkactive-router-outlet-styling/
+
+----------------------------------------------
+
+Quiero poder llevar un registro del dinero que me ingresa y egresa, teniendo en cuenta:
+
+Teniendo en cuenta:
+- Fecha de la operación, tipo (gasto/ingreso), monto, categoría, detalle
+
+Ejemplo: 
+
+20/01/2023
+Ingreso
+$4000
+Sueldo
+Trabajo para el cliente A
 
 

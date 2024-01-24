@@ -1,0 +1,18 @@
+<h3>Videos</h3>
+
+<div class="container">
+  <div class="row">
+    <div *ngFor="let video of videos" class="col-md-3 mb-4">
+      <div class="card custom-card-height d-flex flex-column">
+        <div class="thumbnail-container">
+          <img [src]="getYouTubeThumbnail(video.url)" alt="Video Thumbnail" class="card-img-top">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">{{ video.titulo }}</h5>
+          <p class="card-text">{{ video.descripcion }}</p>
+        </div>
+        <p class="card-text mt-auto">Vistas: {{ video.cant_vistas }} | Me gusta: {{ video.cant_meGusta }}</p>
+      </div>
+    </div>
+  </div>
+</div>
